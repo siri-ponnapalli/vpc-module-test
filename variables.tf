@@ -27,7 +27,10 @@ variable "database_subnet_cidrs" {
     default = ["10.0.21.0/24", "10.0.22.0/24"]
 }
 
-variable "is_peering_requried" {
-    default = true
-  
+variable "is_peering_required" {
+    default = true  
+}
+
+variable "vpc_cidr" {
+    default = "172.10.0.0/16"
 }
